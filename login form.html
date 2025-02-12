@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="gumatay.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+</head>
+<body>
+ <div class="container">
+    <div class="form-container">
+      <div id="login-form" class="show-login">
+        <h2 class="form-title">ACCOUNT LOGIN</h2>
+        <form id="login">
+          <div class="input-group">
+            <label for="login-email">Username</label>
+            <input type="email" id="login-email" placeholder="Enter username" required>
+          </div>
+          <div class="input-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter password" required>
+          </div>
+          <button class="btn" type="submit">Login</button>
+        </form>
+        <div class="form-footer">
+        <a href="#" onclick="document.body.classList.add('show-signup'); document.body.classList.remove('show-login');">Sign up</a>
+        </div>
+      </div>
+      <div id="signup-form">
+        <h2 class="form-title">Sign Up</h2>
+        <form id="signup">
+          <div class="input-group">
+            <label for="signup-email">Usernane</label>
+            <input type="email" id="signup-email" placeholder="Enter username" required>
+          </div>
+          <div class="input-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter password" required>
+          </div>
+          <div class="input-group">
+            <label for="signup-confirm-password">Conform password</label>
+            <input type="password" id="signup-confirm-password" placeholder="Confirm password" required>
+          </div>
+          <button class="btn" type="submit">Create Account</button>
+        </form>
+        <div class="form-footer">
+         <a href="#" onclick="document.body.classList.add('show-login'); document.body.classList.remove('show-signup');">Login</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
