@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .form-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+
+  .form-title {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 35px;
+    color: black;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+  }
+
+  .input-group input:focus {
+    border-color: black;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color:blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    background-color: blue;
+  }
+
+  .form-footer {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .form-footer a {
+    color: blue;
+    text-decoration: wavy;
+  }
+
+  #signup-form {
+    display: none;
+  }
+
+  body.show-signup #login-form {
+    display: none;
+  }
+
+  body.show-signup #signup-form {
+    display: block;
+  }
+  body.show-login #signup-form {
+    display: none;
+  }
+
+  body.show-login #login-form {
+    display: block;
+  }
