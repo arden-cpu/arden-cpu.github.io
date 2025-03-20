@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arden WebProfile</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+           
+
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Arden Gumatay</span>
+            </div>
+            <i class="fas fa-bars" id="menu"></i>
+            <div class="links">
+                <a href="#" onclick="showSection('home')">Home</a>
+                <a href="#" onclick="showSection('about')">About</a>
+                <a href="#" onclick="showSection('skills')">Skills</a>
+                <a href="#" onclick="showSection('education')">Education</a>
+                <a href="#" onclick="showSection('contact-us')">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section-container active">
+        <div class="home-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="arden.jpg" alt="error">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Hey I'm <br><span>Arden Gumatay </span>
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I am a second-year IT student passionate about developing websites and <br>
+                     systems.I love exploring new technologies and continuously improving <br>
+                     my skills to create better and more efficient solutions.  
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-container">
+        <div class="about-container">
+            <div class="image" data-aos="zoom-in-left" data-aos-duration="1500">
+                <img src="arden.jpg" alt="About Me">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left">About Me</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    Hi! I'm a second-year IT student with a strong passion for web development and <br> 
+                    system creation. I enjoy exploring new technologies and continuously improving <br>
+                    my skills to build efficient and user-friendly solutions. My goal is to turn <br>
+                    ideas into functional and innovative digital experiences while constantly learning <br>
+                    and growing in the field of technology. In my free time, I enjoy coding, playing <br> 
+                    video games, and exploring new design trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-container">
+        <h2 class="heading2">My <span>Skills</span></h2>
+        <div class="skill-container">
+            <div class="skill-box">
+                <img src="engage.png" alt="">
+                <div class="skillbbox_layer">
+                    <h4>Engagement & Communication</h4>
+                </div>
+            </div>
+            <div class="skill-box">
+                <img src="software.jpg" alt="">
+                <div class="skillbbox_layer">
+                    <h4>Software Development</h4>
+                </div>
+            </div>
+            <div class="skill-box">
+                <img src="editing.jpg" alt="">
+                <div class="skillbbox_layer">
+                    <h4>Video Editing</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-container">
+        <div class="education-container">
+            <div class="image">
+                <img src="grad.jpg" alt="Services Image">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left">Education</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    I graduated from Aloran Trade High School and am currently a <br>
+                     second-year college student pursuing an Information Technology <br>
+                    course at USTP Oroquieta City. During my senior high school years, <br>
+                    I was recognized as a With Honors awardee, reflecting my dedication <br>
+                    to academic excellence. My education has provided me with a strong <br>
+                    foundation in technology, equipping me with essential skills and <br>
+                     knowledge for my future career in the IT industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-us" class="section-container">
+        <div class="contacts-container">
+            <div class="myinfo">
+                <h2 >Contact <span>Me</span></h2>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"><span>gumatayarden18@gmail.com </span></i>
+                    <i class="fa-solid fa-phone-volume"><span>+639541634864</span></i>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/share/15ErjGTDAE/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@ur_boy.19?_t=ZS-8uoTNKAFPJk&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://github.com/arden-cpu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <a href="https://myaccount.google.com/u/3/" target="_blank" class="view-btn">Hire me</a>
+                
+            </div>
+            <div class="your-response">
+                <form action="http://localhost/webProfile/submit.php" method="POST" >
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="10" required></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
